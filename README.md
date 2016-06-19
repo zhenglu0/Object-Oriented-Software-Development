@@ -1,7 +1,7 @@
 **************************************************************************
-Object-Oriented-Software-Developmen Labs
+## Object-Oriented-Software-Developmen Labs
 
-Zheng Luo
+Zheng Luo Yan Liu Yue Yuan
 **************************************************************************
 
 ************************************************
