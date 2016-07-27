@@ -1,0 +1,14 @@
+Reversi
+LZ
+YY
+E E E X X X E E 
+E E E E X E E E 
+E E E X O X E E 
+E E E O O E E E 
+E E O X O X E E 
+E E E X O E E E 
+E E E E E E E E 
+E E E E E E E E 
+6
+5
+YY

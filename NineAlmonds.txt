@@ -1,0 +1,11 @@
+NineAlmonds
+E E E E E 
+E A A A E 
+E A E E A 
+E A A A E 
+E E E E E 
+0
+START TRACE
+2 2
+4 2
+END TRACE
