@@ -7,7 +7,7 @@
 ##############################################################
 
 CXX       = g++
-CXXFLAGS  = -g -Wall -Werror -std=c++0x 
+CXXFLAGS  = -g -Wall -Werror -std=c++11 
 
 ##############################################################
 # You shouldn't have to change anything below this line.
