@@ -1,5 +1,5 @@
 **************************************************************************
-## Object-Oriented-Software-Developmen Labs
+Object-Oriented-Software-Developmen Labs
 
 Zheng Luo Yan Liu Yue Yuan
 **************************************************************************
@@ -804,7 +804,7 @@ Bob's turn SKIPPED, because there is no valid square to put.
 Alice is the WINNER! Congratulations! Alice took 5 turns to finish the game.
 
 ** Note that the test shows that the program is able to make skips when no valid move exists.
-The program will also stop when the board consists of game pieces of only one player, even if it is not filled.
+   The program will also stop when the board consists of game pieces of only one player, even if it is not filled.
 
 
 -----------------------------------------------------------------------------------------------
@@ -907,37 +907,37 @@ Extra Credit
 Summarize approach: 
 -------------------
 Most of the design of the Checkers game is very like the Reversi Game. We used a vector to hold the Checkers game piece. The following functions are very similar with the functions used in the Reversi game. 
-virtual bool done();
-virtual int prompt(unsigned int &a, unsigned int &b);
-virtual void turn();
-virtual void print();
-virtual int play();
-virtual void save_current_state();
-virtual void abort_current_state();
+	virtual bool done();
+	virtual int prompt(unsigned int &a, unsigned int &b);
+	virtual void turn();
+	virtual void print();
+	virtual int play();
+	virtual void save_current_state();
+	virtual void abort_current_state();
 
-
+	
 Some functions are different.
 We wrote the following two functions for checking if the position is valid for putting a valid piece.
-virtual bool valid_put_position_black(unsigned int i, unsigned int j, unsigned int m, unsigned int n) 
-virtual bool valid_put_position_white(unsigned int i, unsigned int j, unsigned int m, unsigned int n)
+	virtual bool valid_put_position_black(unsigned int i, unsigned int j, unsigned int m, unsigned int n) 
+	virtual bool valid_put_position_white(unsigned int i, unsigned int j, unsigned int m, unsigned int n)
 
 We wrote the following two functions for completing the play's turn and change the board according to the rules.
-virtual void complete_black_turn(unsigned int i, unsigned int j, unsigned int m, unsigned int n) 
-virtual void complete_white_turn(unsigned int i, unsigned int j, unsigned int m, unsigned int n) 
+	virtual void complete_black_turn(unsigned int i, unsigned int j, unsigned int m, unsigned int n) 
+	virtual void complete_white_turn(unsigned int i, unsigned int j, unsigned int m, unsigned int n) 
 
 We wrote the following two functions for checking if there is a putting position for white piece.
-virtual bool check_available_move_black();
-virtual bool check_available_move_white();
+	virtual bool check_available_move_black();
+	virtual bool check_available_move_white();
 
 We wrote the following two functions for deciding whether the piece on the board should be changed into the King.
-virtual void whether_change_into_king(); 
-
+	virtual void whether_change_into_king(); 
+	
 We wrote the following two functions for checking if the current piece can move continuously.
-virtual bool check_continuous_move_current_black(unsigned int i, unsigned int j);
-virtual bool check_continuous_move_current_white(unsigned int i, unsigned int j);
+	virtual bool check_continuous_move_current_black(unsigned int i, unsigned int j);
+	virtual bool check_continuous_move_current_white(unsigned int i, unsigned int j);
 
 Please read the comments in the source files to know the details of the implementation.
-
+	
 
 *********************************
 Test cases for the Checkers game:
@@ -1930,7 +1930,6 @@ If we want to make (2,4) move, we may input: 0,2
 The output: This is not valid move. Please re-select a Destination by specifying its coordinate position.
 
 ** Therefore, the test shows that the program ensures only the game piece that can double jump is moved in the second jump.
-
 
 
 
