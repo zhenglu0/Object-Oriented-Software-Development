@@ -15,10 +15,10 @@ CXXFLAGS  = -g -Wall -Werror -std=c++11
 
 GAMES_EXE  = Games
 GAMES_OBJS = Games.o GameBase.o \
-			 CheckersGame.o ChessGame.o ChessDesign.o \
-			 NineAlmondsGame.o MagicSquareGame.o ReversiGame.o \
-			 TicTacToeBase.o TicTacToeGame.o TicTacToeState.o \
-			 OtherFunctions.o
+             CheckersGame.o ChessGame.o ChessDesign.o \
+             NineAlmondsGame.o MagicSquareGame.o ReversiGame.o \
+             TicTacToeBase.o TicTacToeGame.o TicTacToeState.o \
+             OtherFunctions.o
 
 ###
 
@@ -37,31 +37,30 @@ clean:
 ###
 
 CheckersGame.o: CheckersGame.cpp CheckersGame.h \
-				OtherFunctions.cpp OtherFunctions.h GameBase.h
+                OtherFunctions.cpp OtherFunctions.h GameBase.h
 
 ChessGame.o: ChessGame.cpp ChessGame.h \
-			 ChessDesign.h OtherFunctions.h GameBase.h
+             ChessDesign.h OtherFunctions.h GameBase.h
 
 NineAlmondsGame.o: NineAlmondsGame.cpp NineAlmondsGame.h \
-				   OtherFunctions.h GameBase.h
+                   OtherFunctions.h GameBase.h
 
 MagicSquareGame.o: MagicSquareGame.cpp MagicSquareGame.h \
-				   OtherFunctions.h GameBase.h
+                   OtherFunctions.h GameBase.h
 
 ReversiGame.o: ReversiGame.cpp ReversiGame.h \
-			   OtherFunctions.h GameBase.h
+               OtherFunctions.h GameBase.h
 
 TicTacToeBase.o: TicTacToeBase.cpp TicTacToeBase.h
 
 TicTacToeGame.o: TicTacToeBase.cpp TicTacToeBase.h \
-				 TicTacToeState.h TicTacToeGame.h OtherFunctions.h GameBase.h
+                 TicTacToeState.h TicTacToeGame.h OtherFunctions.h GameBase.h
 
 TicTacToeState.o: TicTacToeState.cpp TicTacToeState.h
 
 OtherFunctions.o: OtherFunctions.cpp OtherFunctions.h
 
 GameBase.o: GameBase.cpp GameBase.h \
-			OtherFunctions.h CheckersGame.h ChessGame.h NineAlmondsGame.h MagicSquareGame.h ReversiGame.h TicTacToeGame.h
+            OtherFunctions.h CheckersGame.h ChessGame.h NineAlmondsGame.h MagicSquareGame.h ReversiGame.h TicTacToeGame.h
 
-Games.o: Games.cpp \
-		 GameBase.cpp GameBase.h
+Games.o: Games.cpp GameBase.h
