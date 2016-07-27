@@ -7,7 +7,7 @@
 ##############################################################
 
 CXX       = g++
-CXXFLAGS  = -g -Wall -Werror -std=c++11 
+CXXFLAGS  = -g -Wall -Werror -std=c++11
 
 ##############################################################
 # You shouldn't have to change anything below this line.
@@ -34,58 +34,34 @@ clean:
 .cpp.o:
 	$(CXX) $(CXXFLAGS) -c $<
 
-###		
-			
+###
+
 CheckersGame.o: CheckersGame.cpp CheckersGame.h \
-				OtherFunctions.cpp OtherFunctions.h \
-				GameBase.cpp GameBase.h 
+				OtherFunctions.cpp OtherFunctions.h GameBase.h
 
 ChessGame.o: ChessGame.cpp ChessGame.h \
-			 ChessDesign.cpp ChessDesign.h \
-			 OtherFunctions.cpp OtherFunctions.h \
-			 GameBase.cpp  GameBase.h
+			 ChessDesign.h OtherFunctions.h GameBase.h
 
 NineAlmondsGame.o: NineAlmondsGame.cpp NineAlmondsGame.h \
-			 	   OtherFunctions.cpp OtherFunctions.h \
-			       GameBase.cpp  GameBase.h
+				   OtherFunctions.h GameBase.h
 
 MagicSquareGame.o: MagicSquareGame.cpp MagicSquareGame.h \
-				   OtherFunctions.cpp OtherFunctions.h \
-				   GameBase.cpp GameBase.h 
+				   OtherFunctions.h GameBase.h
 
 ReversiGame.o: ReversiGame.cpp ReversiGame.h \
-			   OtherFunctions.cpp OtherFunctions.h \
-			   GameBase.cpp GameBase.h
+			   OtherFunctions.h GameBase.h
 
 TicTacToeBase.o: TicTacToeBase.cpp TicTacToeBase.h
 
 TicTacToeGame.o: TicTacToeBase.cpp TicTacToeBase.h \
-				 TicTacToeState.cpp TicTacToeState.h \
-				 TicTacToeGame.cpp TicTacToeGame.h \
-				 OtherFunctions.cpp OtherFunctions.h \
-				 GameBase.cpp GameBase.h
+				 TicTacToeState.h TicTacToeGame.h OtherFunctions.h GameBase.h
 
 TicTacToeState.o: TicTacToeState.cpp TicTacToeState.h
 
 OtherFunctions.o: OtherFunctions.cpp OtherFunctions.h
 
 GameBase.o: GameBase.cpp GameBase.h \
-			OtherFunctions.cpp OtherFunctions.h \
-			CheckersGame.cpp CheckersGame.h \
-			ChessGame.cpp ChessDesign.cpp ChessGame.h ChessDesign.h \
-			NineAlmondsGame.cpp NineAlmondsGame.h \
-			MagicSquareGame.cpp MagicSquareGame.h \
-			ReversiGame.cpp ReversiGame.h \
-			TicTacToeGame.cpp TicTacToeBase.cpp TicTacToeState.cpp \
-			TicTacToeGame.h TicTacToeBase.h TicTacToeState.h
+			OtherFunctions.h CheckersGame.h ChessGame.h NineAlmondsGame.h MagicSquareGame.h ReversiGame.h TicTacToeGame.h
 
 Games.o: Games.cpp \
-		 GameBase.cpp GameBase.h \
-		 OtherFunctions.cpp OtherFunctions.h \
-		 CheckersGame.cpp CheckersGame.h \
-		 ChessGame.cpp ChessDesign.cpp ChessGame.h ChessDesign.h \
-		 NineAlmondsGame.cpp NineAlmondsGame.h \
-		 MagicSquareGame.cpp MagicSquareGame.h \
-		 ReversiGame.cpp ReversiGame.h \
-		 TicTacToeGame.cpp TicTacToeBase.cpp TicTacToeState.cpp \
-		 TicTacToeGame.h TicTacToeBase.h TicTacToeState.h
+		 GameBase.cpp GameBase.h
